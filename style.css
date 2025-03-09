@@ -1,0 +1,30 @@
+li {
+    float: left;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+  }
+ 
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 18px;
+  }
+  
+  /* Hover color */
+  li a:hover {
+    background-color: darkgray;
+  }
+
+li img{
+    width: auto;
+    height: 48px;
+    display: block;
+  }
