@@ -1,30 +1,72 @@
-li {
-    float: left;
+
+ body{
+  max-width: 600px;
+  margin: auto;
+ }
+ 
+ aside{
+  max-width: 450px;
+  text-align: justify;
+ }
+
+ article{
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  max-width: 540px;
+ }
+ img{
+  height: auto;
+  object-fit: fill;
+ }
+
+ span {
+  display: none;
 }
 
-ul {
+table, th, td {
+  border:1px solid black;
+}
 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: gray;
-  }
+p:hover span {
+  display: block;
+}
  
-li a {
+ .navbar a {
     display: block;
     color: black;
     text-align: center;
+    text-decoration: none;
     padding: 15px 18px;
-  }
-  
-  /* Hover color */
-  li a:hover {
-    background-color: darkgray;
+    float: left;
   }
 
-li img{
-    width: auto;
-    height: 48px;
-    display: block;
+   .navbar a:hover {
+    background-color: darkgray;  
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 10px;
+    width: 550px;
+  }
+
+  .about section{
+    margin-right: 50px;
+  }
+
+  .dropdown {
+    width: 33%;
+    align-items: center;
+    margin: 15px;
+  }
+  .dropdown img{
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .pricing section{
+    width: 50%;
   }
