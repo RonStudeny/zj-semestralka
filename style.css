@@ -66,6 +66,24 @@ p:hover span {
     border-radius: 50%;
   }
 
-  .pricing section{
+  .prices{
+    float: left;
+    padding: 8px;
     width: 50%;
+  }
+.prices ul{
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.prices li{
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+  
+.prices .header{
+    font-size: 25;
   }
