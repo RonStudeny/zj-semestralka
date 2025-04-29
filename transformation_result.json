@@ -1,0 +1,90 @@
+
+{
+    "QuickCare": {
+      "Users": [
+        
+  {
+    "ID": "u1",
+    "Created": "2024-01-15",
+    "ValidInsurance": true,
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Email": "john.doe@example.com",
+    "PhoneNumber": "+123456789",
+    "Subscribtion": "Standard",
+    "Location": {
+      "City": "New York",
+      "Street": "5th Avenue 101",
+      "PostalCode": "10001",
+      "Country": "USA"
+    }
+  }
+,
+  {
+    "ID": "u2",
+    "Created": "2024-03-22",
+    "ValidInsurance": false,
+    "FirstName": "Emily",
+    "LastName": "Clark",
+    "Email": "emily.clark@example.org",
+    "PhoneNumber": "+987654321",
+    "Subscribtion": "Free",
+    "Location": {
+      "City": "London",
+      "Street": "Baker Street 221B",
+      "PostalCode": "NW1 6XE",
+      "Country": "UK"
+    }
+  }
+
+      ],
+      "Doctors": [
+        
+  {
+    "ID": "d1",
+    "Active": true,
+    "Contracted": true,
+    "Language": "English",
+    "Rating": 4.7,
+    "FirstName": "Anna",
+    "LastName": "Smith",
+    "Title": "MD",
+    "Specialization": "Cardiology",
+    "YearsOfPractice": 15,
+    "WorkHistory": "General Hospital, City Clinic",
+    "Gender": "Female",
+    "Availability": "Fulltime"
+  }
+
+      ],
+      "PricingPlans": [
+        
+  {
+    "PlanName": "QuickCare Standard",
+    "PricePerCharge": 10.00,
+    "Features": [
+      
+        "Unlimited call time",
+        "Special psychotherapy sessions",
+        "Specialized medical care"
+    ],
+    "PricingModel": "PerMonth"
+  }
+
+      ],
+      "Articles": [
+        
+  {
+    "Title": "Digital Health in 2025",
+    "Topic": "Technology",
+    "Author": {
+      "FirstName": "Michael",
+      "LastName": "Jordan"
+    },
+    "DatePublished": "2025-04-20",
+    "Content": "Telemedicine is transforming access to healthcare across the globe."
+  }
+
+      ]
+    }
+  }

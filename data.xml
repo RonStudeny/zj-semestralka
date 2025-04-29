@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickCare xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="schema.xsd">
+
+    <User ID="u1" Created="2024-01-15" ValidInsurance="true">
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <Email>john.doe@example.com</Email>
+        <PhoneNumber>+123456789</PhoneNumber>
+        <Subscribtion>Standard</Subscribtion>
+        <Location>
+            <City>New York</City>
+            <Street>5th Avenue 101</Street>
+            <PostalCode>10001</PostalCode>
+            <Country>USA</Country>
+        </Location>
+    </User>
+
+    <User ID="u2" Created="2024-03-22" ValidInsurance="false">
+        <FirstName>Emily</FirstName>
+        <LastName>Clark</LastName>
+        <Email>emily.clark@example.org</Email>
+        <PhoneNumber>+987654321</PhoneNumber>
+        <Subscribtion>Free</Subscribtion>
+        <Location>
+            <City>London</City>
+            <Street>Baker Street 221B</Street>
+            <PostalCode>NW1 6XE</PostalCode>
+            <Country>UK</Country>
+        </Location>
+    </User>
+
+    <Doctor ID="d1" Active="true" Contracted="true" Language="English" Rating="4.7">
+        <FirstName>Anna</FirstName>
+        <LastName>Smith</LastName>
+        <Title>MD</Title>
+        <Specialization>Cardiology</Specialization>
+        <YearsOfPractice>15</YearsOfPractice>
+        <WorkHistory>General Hospital, City Clinic</WorkHistory>
+        <Gender>Female</Gender>
+        <Availability>Fulltime</Availability>
+    </Doctor>
+
+    <PricingPlan>
+        <PlanName>QuickCare Standard</PlanName>
+        <PricePerCharge>10.00</PricePerCharge>
+        <Features>
+            <Feature>Unlimited call time</Feature>
+            <Feature>Special psychotherapy sessions</Feature>
+            <Feature>Specialized medical care</Feature>
+        </Features>
+        <PricingModel>PerMonth</PricingModel>
+    </PricingPlan>
+
+    <Article Title="Digital Health in 2025" Topic="Technology">
+        <Author>
+            <FirstName>Michael</FirstName>
+            <LastName>Jordan</LastName>
+        </Author>
+        <DatePublished>2025-04-20</DatePublished>
+        <Content>Telemedicine is transforming access to healthcare across the globe.</Content>
+    </Article>
+
+</QuickCare>

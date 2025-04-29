@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="QuickCare">
+<xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="User">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="FirstName" type="xs:string"/>
+                    <xs:element name="LastName" type="xs:string"/>
+                    <xs:element name="Email" type="xs:string"/>
+                    <xs:element name="PhoneNumber" type="xs:string"/>
+                    <xs:element name="Subscribtion">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Free"/>
+                                <xs:enumeration value="Standard"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Location">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="City" type="xs:string"/>
+                                <xs:element name="Street" type="xs:string"/>
+                                <xs:element name="PostalCode" type="xs:string"/>
+                                <xs:element name="Country" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="ID" type="xs:ID" use="required"/>
+                <xs:attribute name="Created" type="xs:date" use="required"/>
+                <xs:attribute name="ValidInsurance" type="xs:boolean" use="required"/>
+            </xs:complexType>
+        </xs:element>
+    
+        <xs:element name="Doctor">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="FirstName" type="xs:string"/>
+                    <xs:element name="LastName" type="xs:string"/>
+                    <xs:element name="Title" type="xs:string"/>
+                    <xs:element name="Specialization" type="xs:string"/>
+                    <xs:element name="YearsOfPractice" type="xs:positiveInteger"/>
+                    <xs:element name="WorkHistory" type="xs:string"/>
+                    <xs:element name="Gender">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Male"/>
+                                <xs:enumeration value="Female"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Availability">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Fulltime"/>
+                                <xs:enumeration value="Parttime"/>
+                                <xs:enumeration value="OnLeave"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="ID" type="xs:ID" use="required"/>
+                <xs:attribute name="Active" type="xs:boolean" use="optional"/>
+                <xs:attribute name="Contracted" type="xs:boolean" use="optional"/>
+                <xs:attribute name="Language" type="xs:string" use="optional"/>
+                <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+            </xs:complexType>
+        </xs:element>
+    
+        <xs:element name="PricingPlan">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="PlanName" type="xs:string"/>
+                    <xs:element name="PricePerCharge" type="xs:decimal"/>
+                    <xs:element name="Features">
+                        <xs:complexType>
+                            <xs:sequence maxOccurs="unbounded">
+                                <xs:element name="Feature" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PricingModel">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="PerMinute"/>
+                                <xs:enumeration value="PerMonth"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    
+        <xs:element name="Article">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="Author">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="FirstName" type="xs:string"/>
+                                <xs:element name="LastName" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DatePublished" type="xs:date"/>
+                    <xs:element name="Content" type="xs:string"/>
+                </xs:sequence>
+                <xs:attribute name="Title" type="xs:string"/>
+                <xs:attribute name="Topic" type="xs:string"/>
+            </xs:complexType>
+        </xs:element>
+    </xs:choice>
+</xs:complexType>
+</xs:element>
+   
+
+</xs:schema>

@@ -1,97 +1,111 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuickCare - Online zdravotní konzultace s lékaři různých specializací.">
+    <meta property="og:title" content="QuickCare - Vaše online zdravotní péče">
+    <meta property="og:description" content="Online konzultace s odbornými lékaři, bez nutnosti návštěvy ordinace.">
+    <meta property="og:image" content="./assets/logo.webp">
+    <meta property="og:url" content="./index.html">
     <link rel = "stylesheet" href="style.css">
     <title>On-Line Consultations</title>
 </head>
 <body>
     <Header class = "navbar">
-        <img style="width: 50px;margin-right: 15px;" src="resources/logo.webp" class="logo"></li>
+        <img src="assets/logo.webp" class="logo"></li>
         <nav>     
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Services</a>
-            <a href="#about">Doctors</a>
-            <a href="#about">Pricing</a>
-            <a href="#about">Login</a>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Services</a>
+            <a href="#">Doctors</a>
+            <a href="#">Pricing</a>
+            <a href="#">Login</a>
         </nav>
     </Header>
 
     <article class = "about">
-        <section>
-            <h2>On-Line medical consultation service</h2>         
-        </section>
-        <aside>
-            <img style="width: 350px" src="resources/cover_image.jpg">
-        </aside>
+        <h1>On-Line medical consultation service</h1>  
+        <img style="width: 300px" src="assets/cover_image.jpg">
     </article>
     
     <article class = "about">
         <section>
-            <img style="height:150px;width:350px;" src="resources/happy_customer.png">
-      
+            <img style="height:150px;width:300px;" src="assets/happy_customer.png">
         </section>
-        <aside>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus sem, gravida vel luctus vel, posuere quis quam.</p>   
+        <aside itemprop="department" itemscope itemtype="http://schema.org/MedicalClinic">
+            <h2>About us</h2>
+            <p>
+                We provide high quality online medical consultation service.
+                Our services bring the benefit of remote consultation with experts in the comfort of your home.               
+            </p>   
         </aside>
     </article> 
     
-    <article style="display: flex;">
-        <section class="dropdown">
-            <img src="resources/place_holder.webp">
-            <h3>Dr. Mike</h3>
+    <article >
+        <section class = "doctors">
+            <img src="assets/doctor_pfp.jpg">
+            <h3>Dr. Mia Lang</h3>
             <p>
-                Are you sure?
-                <span>
-                    Are you sure?Are you sure?Are you sure?Are you sure?
-                </span>
+                Expert in pediatric medicine, with 15+ years caring for children's health.
             </p>
         </section>
-        <section class="dropdown">
-            <img src="resources/place_holder.webp">
-            <h3>Dr. Mike</h3>
+        <section class = "doctors">
+            <img src="assets/doctor_pfp.jpg">
+            <h3>Dr. Alex Reid</h3>
             <p>
-                Z domažlic
-                <span>
-                  But if you will hover on the test then this text will also be there.
-                </span>
+                Cardiologist focused on innovative heart treatments and research.
             </p>
         </section>
-        <section class="dropdown">
-            <img src="resources/place_holder.webp">
-            <h3>Dr. Mike</h3>
+        <section class = "doctors">
+            <img src="assets/doctor_pfp.jpg">
+            <h3>Dr. Sofia Chen</h3>
             <p>
-                This is the test which will be shown up normally
-                <span>
-                  But if you will hover on the test then this text will also be there.
-                </span>
+                Renowned neurologist specializing in brain injury recovery.
             </p>
         </section>
     </article> 
+   
     <h2>Pricing</h2>
-
     <article class = "pricing">
         <section>
-            <div>
-                <h2 style=" text-align: center;">Free Plan</h2>
-            </div>
             <ul>
-                <li class = "header">Free Plan</li>
-                <li>Call price 25¢ a minute</li>
+                <li><h2>Free Plan</h2></li>
+                <li class = "price">Call price 25¢ per minute</li>
                 <li>Medicine perscription</li>
                 <li>Only standard medical diagnosis</li>
+                <li>Limited call priority</li>
+                <li>No additional benefits</li>
             </ul>
         </section>
         <section>
-            <div>
-                <h2 style=" text-align: center;">QuickCare Standard</h2>
-            </div>
             <ul>
-                <li class = "header">QuickCare Standard</li>
-                <li>10$ per month</li>
+                <li><h2>QuickCare Standard</h2></li>
+                <li class = "price">10$ per month</li>
                 <li>Unlimited call time</li>
                 <li>Medicine perscription</li>
-                <li>Schedule special psychology consultations</li>
+                <li>Schedule special psychotherapy sessions</li>
+                <li>Specialised medical care</li>
             </ul> 
         </section>
-
-    </article>  
+    </article>
+    <h2>Consultation hours</h2>
+    <article class="hours" itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <ul>
+            <li>Monday - Friday: <time itemprop="opens" datetime="08:00">8:00</time> - <time itemprop="closes" datetime="20:00">20:00</time></li>
+            <li>Saturday - Sunday: <time itemprop="opens" datetime="10:00">10:00</time> - <time itemprop="closes" datetime="18:00">18:00</time></li>
+        </ul>
+    </article>
+    <footer>
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <p><span itemprop="streetAddress">Náměstí Svobody 12</span>, <span itemprop="addressLocality">Praha</span></p>
+            <p><a href="mailto:info@quickcare.cz" itemprop="email">info@quickcare.cz</a></p>
+            <p><a href="tel:+420123456789" itemprop="telephone">+420 123 456 789</a></p>
+        </address>
+        <ul class="socials">
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+        <p>&copy; 2025 QuickCare. All rights reserved.</p>
+    </footer>
+</body>
 </body>

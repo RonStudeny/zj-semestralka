@@ -1,89 +1,100 @@
-
- body{
-  max-width: 600px;
+body {
+  max-width: 36rem;
   margin: auto;
- }
- 
- aside{
-  max-width: 450px;
-  text-align: justify;
- }
+}
 
- article{
+aside {
+  max-width: 24rem;
+  text-align: justify;
+}
+
+article {
   background-color: rgb(243, 243, 243);
   display: flex;
-  padding: 15px;
-  max-width: 540px;
- }
- img{
+  padding: 1rem;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  float: left;
+}
+
+.navbar img{
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.navbar a:hover {
+  background-color: darkgray;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 1rem;
+}
+
+.about p {
+  text-align: justify;
+  margin: 1rem;
+}
+
+.about h1 {
+  margin: 2rem;
+}
+
+.about h2 {
+  margin: 1rem;
+}
+
+.about img {
   height: auto;
   object-fit: fill;
- }
-
- span {
-  display: none;
 }
 
-table, th, td {
-  border:1px solid black;
+.doctors {
+  width: 33%;
+  text-align: center;
+  margin: 1rem;
 }
 
-p:hover span {
-  display: block;
+.doctors img {
+  width: 6rem;
+  border-radius: 50%;
 }
- 
- .navbar a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 18px;
-    float: left;
-  }
 
-   .navbar a:hover {
-    background-color: darkgray;  
-  }
-  .navbar{
-    display: flex;
-    align-items: center;
-    background-color: gainsboro;
-    padding: 10px;
-    width: 550px;
-  }
-
-  .about section{
-    margin-right: 50px;
-  }
-
-  .dropdown {
-    width: 33%;
-    text-align: center;
-    margin: 15px;
-  }
-  .dropdown img{
-    width: 80px;
-    border-radius: 50%;
-  }
-
-  .prices{
-    float: left;
-    padding: 8px;
-    width: 50%;
-  }
-.prices ul{
+.pricing li {
+  text-align: center;
   list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
+  margin: 1rem 0;
 }
 
-.prices li{
-  border-bottom: 1px solid #eee;
-  padding: 20px;
+.price {
+  font-size: large;
+  font-weight: bold;
+}
+
+footer {
+  background: gainsboro;
+  color: black;
+  padding: 0.25rem;
   text-align: center;
 }
-  
-.prices .header{
-    font-size: 25;
-  }
+
+footer a {
+  color: black;
+  text-decoration: underline;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
